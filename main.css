@@ -63,10 +63,65 @@ header {
   z-index: -1;
 }
 
+.coluna-experiencia {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  margin-left: 130px;
+}
+.title-experiencia {
+  display: grid;
+  word-break: break-word;
+  color: #e0e0e0;
+  font-size: 144px;
+  grid-column: 1;
+  grid-area: 1;
+  max-width: 380px;
+}
+
+.texto-experiencia {
+  display: grid;
+  color: #525252;
+  font-size: 24px;
+  background: #141414;
+  align-self: flex-start;
+}
+
+.row-experiencia {
+  display: grid;
+  grid-template-columns: 800px;
+  gap: 10px;
+  background-color: aqua;
+}
+.row-experiencia h3 {
+  font-size: 1.2rem;
+  color: #000000;
+}
+.row-experiencia p {
+  color: #525252;
+}
+
+.primeira-experiencia {
+  display: grid;
+  background: #f5f5f5;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.exp-2{
+  grid-column: 1;
+  margin-top: 10px;
+}
+.exp-3{
+}
+.exp-4{
+  grid-column: 2;
+}
+
 @media (max-width: 1400px) {
   #logo-header {
     padding-left: 100px;
   }
+
   .navbar-header {
     padding-right: 100px;
   }
@@ -76,48 +131,59 @@ header {
     gap: 100px;
     grid-template-columns: 290px 510px;
   }
+
   .introduction-texts {
     font-size: 3rem;
   }
+
   .introduction-texts p {
     font-size: 1.4rem;
   }
+
   .img-text {
     width: 100px;
     top: 30px;
     left: 358px;
   }
 }
+
 @media (max-width: 1000px) {
   #logo-header {
     padding-top: 40px;
     padding-left: 70px;
   }
+
   .navbar-header {
     padding-right: 60px;
   }
+
   .introduction {
     margin-left: 70px;
     gap: 60px;
     grid-template-columns: 290px 420px;
   }
+
   .introduction-texts {
     font-size: 2.5rem;
   }
+
   .introduction-texts p {
     font-size: 1.3rem;
   }
+
   .img-text {
     width: 90px;
     top: 48px;
     left: 320px;
   }
 }
+
 @media (max-width: 850px) {
   #logo-header {
     padding-top: 30px;
     padding-left: 50px;
   }
+
   .navbar-header {
     padding: 45px 20px 0px 20px;
   }
@@ -127,12 +193,15 @@ header {
     gap: 50px;
     grid-template-columns: 190px 390px;
   }
+
   .introduction-texts {
     font-size: 2.2rem;
   }
+
   .introduction-texts p {
     font-size: 1.2rem;
   }
+
   .img-text {
     width: 80px;
     top: -7px;
@@ -144,10 +213,12 @@ header {
   header {
     flex-direction: column;
   }
+
   #logo-header {
     padding-top: 30px;
     padding-left: 0px;
   }
+
   .navbar-header {
     padding: 20px 0px 0px 0px;
   }
@@ -158,10 +229,12 @@ header {
     gap: 20px;
     grid-template-columns: 260px;
   }
+
   .introduction-texts {
     gap: 16px;
     font-size: 1.2rem;
   }
+
   .introduction-texts p {
     font-size: 1.1rem;
   }
