@@ -67,6 +67,7 @@ header {
   display: grid;
   grid-template-columns: 600px 1fr;
   margin-left: 130px;
+  margin-top: 120px;
 }
 .title-experiencia {
   display: grid;
@@ -77,170 +78,62 @@ header {
   grid-area: 1;
   max-width: 380px;
 }
-
-.texto-experiencia {
-  display: grid;
-  color: #525252;
-  font-size: 24px;
-  background: #141414;
-  align-self: flex-start;
-}
-
 .row-experiencia {
-  display: grid;
-  grid-template-columns: 800px;
-  gap: 10px;
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1000px;
 }
 .row-experiencia h3 {
   font-size: 1.2rem;
   color: #000000;
 }
-.row-experiencia p {
+.texto-experiencia {
+  display: grid;
   color: #525252;
+  font-size: 1.5rem;
+  align-self: flex-start;
+  width: 550px;
+  margin-bottom: 40px;
 }
 
-.primeira-experiencia {
+.column-experiencia {
+  margin-top: 20px;
   display: grid;
   background: #f5f5f5;
   padding: 20px;
   grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  max-width: 900px;
+}
+.menu-exp-tittle {
+  margin-left: 75px;
+}
+.exp-text {
+  font-size: 1.2rem;
+  color: #525252;
+  width: 450px;
 }
 
-.exp-2{
-  grid-column: 1;
+.menu-exp-lista {
+  margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 300px;
+  align-items: flex-start;
+}
+.exp-text {
   margin-top: 10px;
 }
-.exp-3{
-}
-.exp-4{
-  grid-column: 2;
-}
 
-@media (max-width: 1400px) {
-  #logo-header {
-    padding-left: 100px;
-  }
-
-  .navbar-header {
-    padding-right: 100px;
-  }
-
-  .introduction {
-    margin-left: 100px;
-    gap: 100px;
-    grid-template-columns: 290px 510px;
-  }
-
-  .introduction-texts {
-    font-size: 3rem;
-  }
-
-  .introduction-texts p {
-    font-size: 1.4rem;
-  }
-
-  .img-text {
-    width: 100px;
-    top: 30px;
-    left: 358px;
-  }
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  margin-top: 10px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 5px;
 }
 
-@media (max-width: 1000px) {
-  #logo-header {
-    padding-top: 40px;
-    padding-left: 70px;
-  }
 
-  .navbar-header {
-    padding-right: 60px;
-  }
-
-  .introduction {
-    margin-left: 70px;
-    gap: 60px;
-    grid-template-columns: 290px 420px;
-  }
-
-  .introduction-texts {
-    font-size: 2.5rem;
-  }
-
-  .introduction-texts p {
-    font-size: 1.3rem;
-  }
-
-  .img-text {
-    width: 90px;
-    top: 48px;
-    left: 320px;
-  }
-}
-
-@media (max-width: 850px) {
-  #logo-header {
-    padding-top: 30px;
-    padding-left: 50px;
-  }
-
-  .navbar-header {
-    padding: 45px 20px 0px 20px;
-  }
-
-  .introduction {
-    margin-left: 50px;
-    gap: 50px;
-    grid-template-columns: 190px 390px;
-  }
-
-  .introduction-texts {
-    font-size: 2.2rem;
-  }
-
-  .introduction-texts p {
-    font-size: 1.2rem;
-  }
-
-  .img-text {
-    width: 80px;
-    top: -7px;
-    left: 212px;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    flex-direction: column;
-  }
-
-  #logo-header {
-    padding-top: 30px;
-    padding-left: 0px;
-  }
-
-  .navbar-header {
-    padding: 20px 0px 0px 0px;
-  }
-
-  .introduction {
-    justify-content: center;
-    margin: 20px 0 0 0;
-    gap: 20px;
-    grid-template-columns: 260px;
-  }
-
-  .introduction-texts {
-    gap: 16px;
-    font-size: 1.2rem;
-  }
-
-  .introduction-texts p {
-    font-size: 1.1rem;
-  }
-  /* .img-text {
-    width: 40px;
-    top: 375px;
-    left: 42px;
-  } */
-}
