@@ -1,0 +1,98 @@
+.column-formacao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  background: #141414;
+}
+.title-formacao {
+  color: #000000;
+  font-size: 8rem;
+  line-height: 1;
+  word-break: break-all;
+  max-width: 6ch;
+}
+.row-formacao {
+  display: flex;
+  flex-direction: column;
+}
+.texto-formacao {
+  display: grid;
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  align-self: flex-start;
+  width: 550px;
+  margin: 120px 0px 60px 130px;
+}
+.column-quadrados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-left: 130px;
+  margin-bottom: 60px;
+}
+.quadrados-formacao {
+  display: flex;
+  flex-wrap: wrap;
+  background: #090909;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 200px;
+  height: 200px;
+}
+.quadrados-formacao::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 25px;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  top: 2050px;
+}
+.title-quadrados {
+  margin: 20px 0px 10px 20px;
+  color: #a3a3a3;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.text-quadrados {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.text2-quadrados {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #a3a3a3;
+  margin: 50px 0px 20px 20px;
+}
+.cursos {
+  margin-left: 10px;
+}
+.column-cursos {
+  display: grid;
+  grid-template-columns: 20px 620px;
+  margin-left: 90px;
+  margin-bottom: 60px;
+  gap: 10px;
+}
+.title-cursos {
+  font-size: 0.9rem;
+  color: #8f8f8f;
+}
+.text1-cursos {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #ffffff;
+  grid-column: 2;
+}
+.text2-cursos {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #8f8f8f;
+  align-items: flex-end;
+  grid-column: 3/4;
+  margin-bottom: 10px;
+}

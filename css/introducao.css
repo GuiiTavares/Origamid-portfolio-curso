@@ -1,0 +1,83 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+.texto-introducao {
+  margin-left: 80px;
+  display: grid;
+  font-size: 3.5rem;
+  gap: 30px;
+  align-content: center;
+  font-style: bold;
+  position: relative;
+}
+.texto-introducao p {
+  color: #525252;
+  font-size: 1.5rem;
+}
+.img-text {
+  width: 130px;
+  position: absolute;
+  top: 90px;
+  left: -40px;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .introducao {
+    grid-template-columns: 1fr 2fr;
+    margin: 30px auto;
+    padding: 40px 10px;
+    max-width: 900px;
+  }
+  .texto-introducao {
+    margin-left: 60px;
+    font-size: 2.5rem;
+    gap: 20px;
+    position: relative;
+  }
+  .img-text {
+    position: absolute;
+    width: 100px;
+    top: 70px;
+    left: -35px;
+    z-index: -1;
+  }
+}
+@media (max-width: 800px) {
+  .introducao {
+    justify-content: center;
+    grid-template-columns: 50vw;
+    margin: 30px auto;
+  }
+  .texto-introducao {
+    margin-top: 40px;
+    margin-left: 0px;
+    font-size: 1.5rem;
+    position: relative;
+    gap: 20px;
+  }
+  .texto-introducao p {
+    font-size: 1.05rem;
+  }
+  .img-text {
+    position: absolute;
+    width: 50px;
+    top: -4px;
+    left: -15px;
+  }
+}
+@media (max-width: 400px) {
+  .texto-introducao {
+    font-size: 1.3rem;
+    position: relative;
+  }
+  .img-text {
+    position: absolute;
+    width: 40px;
+    top: 0px;
+    left: -12px;
+  }
+}
