@@ -1,6 +1,5 @@
 footer {
   background: #000000;
-  position: relative;
 }
 .footer {
   max-width: 1200px;
@@ -11,16 +10,10 @@ footer {
   gap: 40px;
   position: relative;
 }
-.img-footer {
-  position: absolute;
-  top: -60px;
-  left: 0px;
-}
 #text1 {
   color: #cccccc;
   font-weight: 400;
   font-size: 1.5rem;
-  width: 32ch;
 }
 .lista-contato {
   font-style: normal;
@@ -35,7 +28,6 @@ footer {
   color: #8f8f8f;
   font-weight: 400;
   font-size: 1.5rem;
-  margin-top: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -47,10 +39,8 @@ footer {
   .footer {
     grid-template-columns: 1fr;
   }
-  .img-footer {
-    left: 430px;
-    width: 100px;
-    height: 100px;
+  .lista-contato {
+    font-size: 1.5rem;
   }
   #text2 {
     margin-top: 50px;

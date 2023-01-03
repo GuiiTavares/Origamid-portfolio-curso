@@ -63,6 +63,7 @@
   padding: 5px 10px;
   background: #ffffff;
 }
+
 @media (max-width: 1200px) {
   .coluna-experiencia {
     gap: 50px;

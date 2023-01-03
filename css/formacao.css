@@ -1,9 +1,10 @@
 .column-formacao {
   background: #141414;
+  position: relative;
 }
 .formacao {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 120px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -103,6 +104,15 @@
   grid-column: 3/4;
   margin-bottom: 10px;
 }
+.column-formacao::after {
+  content: "";
+  width: 128px;
+  height: 128px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -60px;
+  left: 20px;
+}
 @media (max-width: 1200px) {
   .title-formacao {
     max-width: 4ch;
@@ -129,5 +139,8 @@
   }
   .cursos-icon {
     position: initial;
+  }
+  .column-formacao::after{
+   
   }
 }
