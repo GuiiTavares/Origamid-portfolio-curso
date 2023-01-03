@@ -63,7 +63,11 @@
   padding: 5px 10px;
   background: #ffffff;
 }
-
+@media (max-width: 1200px) {
+  .coluna-experiencia {
+    gap: 50px;
+  }
+}
 @media (max-width: 800px) {
   .coluna-experiencia {
     gap: 30px;
@@ -74,5 +78,19 @@
     color: #141414;
     max-width: none;
     text-transform: capitalize;
+  }
+}
+@media (max-width: 400px) {
+  .coluna-experiencia {
+    gap: 15px;
+  }
+  .title-experiencia {
+    font-size: 2.5rem;
+  }
+  .texto-empresa {
+    font-size: 1.3rem;
+  }
+  .empresa {
+    grid-template-columns: 1fr;
   }
 }
