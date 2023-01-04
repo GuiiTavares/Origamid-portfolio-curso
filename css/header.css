@@ -23,6 +23,26 @@
   color: #141414;
   font-size: 1.1rem;
   padding: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 10px;
+  left: 0;
+  background-color: #525252;
+  transform-origin: bottom right;
+  transition: transform 0.25s;
+}
+
+.header-menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media (max-width: 800px) {

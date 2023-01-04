@@ -1,83 +1,60 @@
 .introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  max-width: 1200px;
-  margin: 40px auto;
+  gap: 100px;
+  align-items: center;
 }
 .texto-introducao {
-  margin-left: 80px;
-  display: grid;
-  font-size: 3.5rem;
-  gap: 30px;
-  align-content: center;
-  font-style: bold;
+  font-size: 4rem;
+  margin-bottom: 30px;
   position: relative;
 }
-.texto-introducao p {
-  color: #525252;
-  font-size: 1.5rem;
-}
-.img-text {
+.texto-introducao::before {
+  content: "";
+  display: block;
   width: 130px;
-  position: absolute;
-  top: 90px;
-  left: -40px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  top: 5px;
+  left: -35px;
   z-index: -1;
+  position: absolute;
+}
+.texto-introducao p {
+  font-size: 1.4rem;
+  color: #525252;
 }
 
-@media (max-width: 1200px) {
-  .introducao {
-    grid-template-columns: 1fr 2fr;
-    margin: 30px auto;
-    padding: 40px 10px;
-    max-width: 900px;
-  }
+@media (max-width: 1000px) {
   .texto-introducao {
-    margin-left: 60px;
-    font-size: 2.5rem;
-    gap: 20px;
-    position: relative;
+    font-size: 3rem;
   }
-  .img-text {
-    position: absolute;
-    width: 100px;
-    top: 70px;
-    left: -35px;
-    z-index: -1;
+  .texto-introducao::before {
+    width: 40px;
+    height: 10px;
+    top: -5px;
+    left: 0px;
   }
 }
 @media (max-width: 800px) {
   .introducao {
-    justify-content: center;
-    grid-template-columns: 50vw;
-    margin: 30px auto;
+    gap: 40px;
   }
   .texto-introducao {
-    margin-top: 40px;
-    margin-left: 0px;
-    font-size: 1.5rem;
-    position: relative;
-    gap: 20px;
+    font-size: 2rem;
   }
   .texto-introducao p {
-    font-size: 1.05rem;
-  }
-  .img-text {
-    position: absolute;
-    width: 50px;
-    top: -4px;
-    left: -15px;
+    font-size: 1.2rem;
   }
 }
-@media (max-width: 400px) {
-  .texto-introducao {
-    font-size: 1.3rem;
-    position: relative;
+@media (max-width: 500px) {
+  .introducao {
+    grid-template-columns: 1fr;
   }
-  .img-text {
-    position: absolute;
-    width: 40px;
-    top: 0px;
-    left: -12px;
+  .texto-introducao {
+    font-size: 1.5rem;
   }
 }
