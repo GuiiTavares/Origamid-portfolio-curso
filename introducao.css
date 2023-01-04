@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 1000px) {
-  .introducao{
+  .introducao {
     margin-bottom: 80px;
   }
   .texto-introducao {
@@ -64,6 +64,6 @@
     font-size: 1.5rem;
   }
   .texto-introducao::before {
-       top: -7px;
-     }
+    top: -7px;
+  }
 }
