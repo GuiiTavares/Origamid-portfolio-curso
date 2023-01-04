@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+  margin-bottom: 100px;
 }
 .texto-introducao {
   font-size: 4rem;
@@ -29,6 +30,9 @@
 }
 
 @media (max-width: 1000px) {
+  .introducao{
+    margin-bottom: 80px;
+  }
   .texto-introducao {
     font-size: 3rem;
   }
@@ -42,6 +46,7 @@
 @media (max-width: 800px) {
   .introducao {
     gap: 40px;
+    margin-bottom: 40px;
   }
   .texto-introducao {
     font-size: 2rem;
@@ -53,8 +58,12 @@
 @media (max-width: 500px) {
   .introducao {
     grid-template-columns: 1fr;
+    margin-bottom: 10px;
   }
   .texto-introducao {
     font-size: 1.5rem;
   }
+  .texto-introducao::before {
+       top: -7px;
+     }
 }

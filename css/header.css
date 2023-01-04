@@ -5,6 +5,10 @@
   padding: 0;
   font-family: Fira Sans;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -22,11 +26,10 @@
 .header-menu a {
   color: #141414;
   font-size: 1.1rem;
-  padding: 10px;
+  padding: 10px 0px;
   display: inline-block;
   position: relative;
 }
-
 .header-menu a::after {
   content: "";
   position: absolute;
@@ -39,7 +42,6 @@
   transform-origin: bottom right;
   transition: transform 0.25s;
 }
-
 .header-menu a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
